@@ -87,7 +87,6 @@ PRODUCT_PACKAGES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lmi \
-    hardware/xiaomi \
     vendor/nxp/opensource/sn100x
 
 # Overlays
