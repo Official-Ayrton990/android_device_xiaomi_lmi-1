@@ -57,6 +57,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAOnePlus8SeriesFrameworks \
     EmptyOverlay \
     OnePlus8Frameworks \
     OnePlus8SystemUI
