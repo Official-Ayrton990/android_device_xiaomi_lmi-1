@@ -90,6 +90,11 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     vendor/nxp/opensource/sn100x
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-pa
+
 # Paranoid Doze
 PRODUCT_PACKAGES += \
     ParanoidDoze
