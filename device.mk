@@ -24,6 +24,13 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
+
+PRODUCT_PACKAGES += \
+    pa.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
+
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
