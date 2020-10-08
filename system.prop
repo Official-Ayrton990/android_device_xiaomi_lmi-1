@@ -26,6 +26,7 @@ DEVICE_PROVISIONED=1
 ro.recovery.ui.margin_height=150
 
 # Telephony
+persist.netmon.linger=5000
 ro.telephony.default_network=33,22
 telephony.lteOnCdmaDevice=1
 
