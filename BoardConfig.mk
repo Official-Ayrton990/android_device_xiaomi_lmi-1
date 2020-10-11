@@ -71,6 +71,11 @@ TARGET_SCREEN_DENSITY := 420
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Filesystem
+TARGET_USES_MKE2FS := true
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
