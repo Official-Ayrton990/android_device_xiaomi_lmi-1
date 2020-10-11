@@ -82,7 +82,9 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/lmi
+    device/xiaomi/lmi \
+    hardware/xiaomi \
+    vendor/nxp/opensource/sn100x
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
