@@ -95,6 +95,9 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0
