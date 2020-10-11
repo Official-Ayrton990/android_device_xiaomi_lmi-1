@@ -38,9 +38,6 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Init
-PRODUCT_PACKAGES += \
-    init.oneplus.rc
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
     $(LOCAL_PATH)/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
@@ -53,14 +50,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/oneplus8
-
-# Overlays
-PRODUCT_PACKAGES += \
-    AOSPAOnePlus8SeriesFrameworks \
-    EmptyOverlay \
-    OnePlus8Frameworks \
-    OnePlus8SystemUI
+    device/xiaomi/lmi
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -89,7 +79,7 @@ PRODUCT_PACKAGES += \
     update_verifier
 
 # Vendor
-$(call inherit-product, vendor/oneplus/oneplus8/oneplus8-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/lmi/lmi-vendor.mk)
 
 # WiFi
 PRODUCT_PACKAGES += \

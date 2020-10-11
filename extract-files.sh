@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=oneplus8
-VENDOR=oneplus
+DEVICE=lmi
+VENDOR=xiaomi
 
 # Load extract utilities and do some sanity checks.
 MY_DIR="${BASH_SOURCE%/*}"

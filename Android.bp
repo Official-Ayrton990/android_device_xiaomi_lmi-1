@@ -1,8 +1,2 @@
 soong_namespace {
 }
-
-prebuilt_etc {
-    name: "init.oneplus.rc",
-    src: "init.oneplus.rc",
-    sub_dir: "init",
-}

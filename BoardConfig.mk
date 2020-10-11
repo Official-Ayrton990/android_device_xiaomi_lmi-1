@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/oneplus/oneplus8
+DEVICE_PATH := device/xiaomi/lmi
 
 # A/B
 AB_OTA_UPDATER := true
@@ -70,7 +70,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_SCREEN_DENSITY := 420
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus8
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lmi
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
@@ -115,10 +115,13 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus8
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lmi
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_F2FS := true
+
+# Releasetool Extension (OTA packaging fixes)
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \

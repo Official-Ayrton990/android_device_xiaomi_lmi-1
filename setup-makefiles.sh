@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=oneplus8
-VENDOR=oneplus
+DEVICE=lmi
+VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2020
 
