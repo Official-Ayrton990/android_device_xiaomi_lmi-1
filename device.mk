@@ -151,7 +151,8 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.config@1.0
+    android.hardware.tetheroffload.config@1.0 \
+    wifi-mac-generator
 
 # Vendor
 $(call inherit-product-if-exists, vendor/xiaomi/lmi/lmi-vendor.mk)
