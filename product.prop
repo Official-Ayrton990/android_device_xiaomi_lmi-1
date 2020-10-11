@@ -3,7 +3,10 @@ ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
 debug.stagefright.omx_default_rank.sw-audio=16
 ro.control_privapp_permissions=log
-persist.vendor.bt.a2dp.aac_whitelist=false
+
+# Bluetooth
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 
 #Camera Support
 vendor.camera.aux.packagelist=org.lineageos.snap,com.google.android.GoogleCamera,org.codeaurora.snapcam,com.xiaomi.runin,com.xiaomi.cameratest,com.xiaomi.factory.mmi

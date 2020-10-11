@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
+    audio.bluetooth.default \
     libaacwrapper \
     tinymix
 
@@ -33,7 +34,22 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti
+    android.hardware.bluetooth.audio@2.0-impl \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    liba2dpoffload \
+    libbluetooth_qti \
+    libbtconfigstore \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
+	vendor/qcom/opensource/audio-hal/primary-hal/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
 
 # Boot
 PRODUCT_PACKAGES += \
