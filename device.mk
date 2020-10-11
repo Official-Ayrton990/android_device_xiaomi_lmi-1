@@ -54,13 +54,10 @@ TARGET_BOARD_PLATFORM := kona
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
-    audio \
     av \
     bt \
-    display \
-    gps \
-    overlay \
     perf \
+    telephony \
     wfd
 
 # Shipping API
