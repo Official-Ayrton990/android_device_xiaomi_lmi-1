@@ -214,3 +214,7 @@ use.voice.path.for.pcm.voip=true
 vendor.gatekeeper.disable_spu=true
 vendor.hbm.enable=true
 vendor.mm.enable.qcom_parser=131071999
+
+# Xiaomi sensors
+ro.sensor.pickup=xiaomi.sensor.pickup
+ro.sensor.proximity=true

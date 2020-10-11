@@ -86,6 +86,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     vendor/nxp/opensource/sn100x
 
+# Paranoid Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
