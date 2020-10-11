@@ -119,6 +119,19 @@ TARGET_COMMON_QTI_COMPONENTS := \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/product_privapp-permissions-qti.xml
 
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
+
+# RIL
+PRODUCT_PACKAGES += \
+    libjson \
+    libril \
+    librilutils
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
