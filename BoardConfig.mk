@@ -152,6 +152,7 @@ TARGET_BOARD_PLATFORM := kona
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
 
 # Power
+TARGET_TAP_TO_WAKE_EVENT_NODE := "/dev/input/event3"
 TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Properties
