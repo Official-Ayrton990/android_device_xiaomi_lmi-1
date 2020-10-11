@@ -14,18 +14,6 @@
 
 DEVICE_PATH := device/xiaomi/lmi
 
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS := \
-    boot \
-    dtbo \
-    product \
-    recovery \
-    system \
-    system_ext \
-    vbmeta \
-    vbmeta_system
-
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
