@@ -58,6 +58,10 @@ PRODUCT_PACKAGES += \
     pa.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
 
 # Init
+PRODUCT_PACKAGES += \
+    init.qcom.rc \
+    init.recovery.qcom.rc
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
     $(LOCAL_PATH)/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
