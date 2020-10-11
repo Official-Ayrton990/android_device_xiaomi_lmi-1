@@ -38,6 +38,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti.recovery
 
+# Display
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libqdMetaData \
+    libqdMetaData.system \
+    vendor.display.config@1.0
+
 # Fastboot
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
