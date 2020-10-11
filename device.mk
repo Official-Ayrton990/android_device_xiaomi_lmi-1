@@ -31,9 +31,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     pa.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
 
-# GSI
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
@@ -75,9 +72,9 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
-# Vendor
-$(call inherit-product-if-exists, vendor/xiaomi/lmi/lmi-vendor.mk)
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0
+
+# Vendor
+$(call inherit-product-if-exists, vendor/xiaomi/lmi/lmi-vendor.mk)
