@@ -145,6 +145,10 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 
+# Vulkan
+PRODUCT_PACKAGES += \
+    libvulkan
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0
