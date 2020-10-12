@@ -121,7 +121,6 @@ lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libFileMux.so
 lib/libOmxMux.so
 lib/libmmosal.so
-lib/libmmparser_lite.so
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
 lib/libqti-perfd-client_system.so
@@ -155,7 +154,6 @@ lib64/libFileMux.so
 lib64/libOmxMux.so
 lib64/liblocationservice_jni.so
 lib64/libmmosal.so
-lib64/libmmparser_lite.so
 lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
 lib64/libqti-perfd-client_system.so
