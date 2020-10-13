@@ -139,8 +139,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml
 
@@ -155,23 +153,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     telephony \
     wfd
-
-# QTI Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/product_privapp-permissions-qti.xml
-
-# RCS
-PRODUCT_PACKAGES += \
-    rcs_service_aidl \
-    rcs_service_aidl.xml \
-    rcs_service_api \
-    rcs_service_api.xml
-
-# RIL
-PRODUCT_PACKAGES += \
-    libjson \
-    libril \
-    librilutils
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
