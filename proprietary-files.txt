@@ -70,7 +70,6 @@ vendor/lib/modules/tspp.ko:product/vendor_overlay/29/lib/modules/tspp.ko
 -lib/libantradio.so
 -lib64/libantradio.so
 bin/iwpriv
-etc/permissions/audiosphere.xml
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/com.qualcomm.qti.imscmservice.xml
@@ -84,7 +83,6 @@ etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml
 etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml
 etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml
 etc/sysconfig/qti_whitelist.xml
-framework/audiosphere.jar
 framework/com.qti.location.sdk.jar
 framework/izat.xt.srv.jar
 framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
