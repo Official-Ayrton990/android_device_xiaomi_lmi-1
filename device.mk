@@ -151,7 +151,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     perf \
-    telephony \
     wfd
 
 # Shipping API
