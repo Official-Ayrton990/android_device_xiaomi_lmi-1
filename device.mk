@@ -142,6 +142,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qti.dcvs.sh \
+    init.target.rc
+
 # Kernel modules
 $(call inherit-product, device/xiaomi/lmi/prebuilt/kernel-modules.mk)
 
