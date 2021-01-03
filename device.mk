@@ -17,10 +17,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Boot
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti.recovery
+    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.1-impl-qti \
+    android.hardware.boot@1.1-service
 
 # Fastboot
 PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
 # GSI
@@ -35,10 +38,15 @@ PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lmi
 
 # NFC
+TARGET_USES_NQ_NFC := true
+
+$(call inherit-product, vendor/nxp/opensource/commonsys/packages/apps/Nfc/nfc_system_product.mk)
+$(call inherit-product, vendor/nxp/opensource/halimpl/nfc_vendor_product.mk)
+
 PRODUCT_PACKAGES += \
-    NfcNci \
-    Tag \
-    SecureElement
+    se_nq_extn_client \
+    ls_nq_client \
+    jcos_nq_client
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -68,6 +76,10 @@ TARGET_COMMON_QTI_COMPONENTS += \
     wfd \
     wlan
 
+# Recovery
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.recovery.ui.margin_height=150
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -79,3 +91,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
+
+# Verified Boot
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
