@@ -1846,6 +1846,14 @@ vendor/lib64/libwigigsensing.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
 
+# Widevine - Stock
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|4db49073828ddcf51d54e278896b6279f17f75b7
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/lib/mediadrm/libwvdrmengine.so|89957029a847a843f51c6d0cc04720485e31f752
+vendor/lib64/mediadrm/libwvdrmengine.so|99df7a941fcae6a60f6cec7bdab846d6744e0231
+vendor/lib64/libwvhidl.so
+
 # WLAN
 vendor/bin/athdiag
 vendor/bin/cnss-daemon
