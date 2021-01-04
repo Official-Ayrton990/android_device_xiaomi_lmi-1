@@ -123,6 +123,10 @@ PRODUCT_PACKAGES += \
     LmiSystemUI \
     WifiResTarget
 
+# PASR HAL
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.power.pasr.enabled=true
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
