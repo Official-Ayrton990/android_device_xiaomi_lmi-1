@@ -120,6 +120,12 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
+# GPS
+LOC_HIDL_VERSION = 4.0
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
