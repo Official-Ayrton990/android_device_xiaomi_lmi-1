@@ -635,7 +635,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Connection Security
 -vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk;PRESIGNED
 -vendor/app/SSGTelemetryService/SSGTelemetryService.apk;PRESIGNED
--vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk;PRESIGNED
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
@@ -796,7 +795,6 @@ vendor/lib64/libQ6MSFR_manager_stub.so
 vendor/lib64/libface3d_dev.so
 
 # Fingerprint
--vendor/app/QFingerprintService/QFingerprintService.apk;PRESIGNED
 vendor/bin/qfp-daemon
 vendor/etc/init/init_qfp_daemon.rc
 vendor/etc/permissions/qti_fingerprint_interface.xml
@@ -1005,29 +1003,6 @@ vendor/lib64/vendor.qti.hardware.factory@1.1.so
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
-# Media
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
--vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/etc/media_codecs_c2.xml
-vendor/etc/media_codecs_performance_c2.xml
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libqcodec2_base.so
-vendor/lib/libqcodec2_core.so
-vendor/lib/libqcodec2_utils.so
-vendor/lib/libqcodec2_platform.so
-vendor/lib/libqcodec2_basecodec.so
-vendor/lib/libqcodec2_v4l2codec.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libqcodec2_base.so
-vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_utils.so
-vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_basecodec.so
-vendor/lib64/libqcodec2_v4l2codec.so
-
 # NFC
 vendor/bin/nqnfcinfo
 vendor/etc/libnfc-mtp-SN100.conf
@@ -1059,7 +1034,6 @@ vendor/lib/libopenvx.so
 vendor/lib64/libopenvx.so
 
 # PASR HAL
--vendor/app/pasrservice/pasrservice.apk;PRESIGNED
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
 vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
@@ -1141,7 +1115,6 @@ vendor/lib64/libperipheral_client.so
 vendor/etc/public.libraries.txt
 
 # QCC-TR-UI
--vendor/app/QCC-TR-UI/QCC-TR-UI.apk;PRESIGNED
 vendor/bin/qcc-trd
 
 # QCC VND HAL
@@ -1726,7 +1699,6 @@ vendor/etc/init/android.hardware.usb@1.2-service-qti.rc|a2861bb85d9a01edbc69a9d7
 -vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml|566d08411dab08d284c839e605a0bab9a672db2d
 
 # VPP
--vendor/app/SSMEditor/SSMEditor.apk;PRESIGNED
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
@@ -1752,20 +1724,8 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
 # Video
-vendor/bin/mm-vidc-omx-test
-vendor/lib/libI420colorconvert.so
--vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libOmxVenc.so
-vendor/lib/libfastcrc.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libstreamparser.so
-vendor/lib/libswvdec.so
-vendor/lib/libvideoutils.so
-vendor/lib64/libI420colorconvert.so
--vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libOmxVenc.so
-vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libswvdec.so
 
 # WFD
 vendor/bin/wfdhdcphalservice
