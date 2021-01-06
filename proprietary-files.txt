@@ -1689,13 +1689,6 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
-# USB
-vendor/bin/hw/android.hardware.usb@1.2-service-qti|c705a48017cf40fd5a38adfc6b183c85f10ce26e
-vendor/bin/init.qcom.usb.sh|6161519d87ef89f13376dd7d1dd7e9d7eec8fc54
-vendor/etc/init/hw/init.qcom.usb.rc|b08bcc154f9012b9d5b291892864379388d99469
-vendor/etc/init/android.hardware.usb@1.2-service-qti.rc|a2861bb85d9a01edbc69a9d7cb99fe7fc533ac25
--vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml|566d08411dab08d284c839e605a0bab9a672db2d
-
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
