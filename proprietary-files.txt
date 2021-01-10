@@ -95,7 +95,6 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so|55973e1172766bb5332887a4c26383f9b0
 
 # Audio
 vendor/lib/hw/sound_trigger.primary.kona.so
-vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
@@ -531,7 +530,6 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Connection Security
--vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk;PRESIGNED
 -vendor/app/SSGTelemetryService/SSGTelemetryService.apk;PRESIGNED
 -vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk;PRESIGNED
 vendor/bin/ssgqmigd
@@ -539,6 +537,9 @@ vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
 vendor/lib/libminksocket.so
 vendor/lib64/libminksocket.so
+
+# Connection Security - from MIUI 12.2.3
+-vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk;PRESIGNED
 
 # DPM
 vendor/bin/dpmQmiMgr
