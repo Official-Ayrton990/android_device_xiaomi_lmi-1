@@ -622,11 +622,11 @@ vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
-# Charger
-vendor/bin/hvdcp_opti
-vendor/bin/init.qti.chg_policy.sh
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
-vendor/etc/charger_fstab.qti
+# Charger - from MIUI 12.2.3
+vendor/bin/hvdcp_opti|9c959c6b7196cdec489096b8597d6a69de1d39d4
+vendor/bin/init.qti.chg_policy.sh|b1301822b93f588c735fa86edc707c47340d0736
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
+vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
 
 # Config Store
 vendor/bin/hw/capabilityconfigstoretest
