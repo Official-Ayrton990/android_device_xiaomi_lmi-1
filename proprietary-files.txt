@@ -1,13 +1,13 @@
 # ACDB Database - MIUI 12.2.3
-vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
-vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb|4737c525129d849c02958c93eca75128dd7c6d2f
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb|d775ff45660722943a628fb5f234e3acdf98f45b
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|2446cbb3af28ca8f2b1da9c5a1e65c2204bf64f8
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb|81beae0989fa517cfe4b18e9175e88739dd0059e
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb|2e08dc78525e42111daf1cd6a7789bb9cc6cfd63
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|3b58ae694056419e91825958f2d2d90bc29dc017
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|0b5fae990bd64510fe30d68c622a93c911053d45
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|4a92b4f11b0c9f812aa941802768c45e0bd43944
+vendor/etc/acdbdata/adsp_avs_config.acdb|bd5453d6fd844ccc4a5160a4cbd7871dcd1aa655
 
 # ADSPRPC
 vendor/bin/adsprpcd
@@ -84,14 +84,14 @@ vendor/lib64/libgsl.so|0bea04258f602784422489075afa89aac94d0ccb
 vendor/lib64/libllvm-glnext.so|2d1b6bbe570a848edc0b959eb53358d7d7c50ee7
 vendor/lib64/libllvm-qcom.so|52132fa35bfe6639172fda39dc2b91a1b704af84
 
-# Alarm
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.alarm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+# Alarm - from MIUI 12.2.3
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|ceb3a6acc1e8b48f4f874f56ea35f760616615a0
+vendor/bin/power_off_alarm|160bd6e3ae23b4aba3b73d5c1865074beac77e7c
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
+vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so|c4e04b06eab6f689b5db1fb831fe53c56b799499
+vendor/lib/vendor.qti.hardware.alarm@1.0.so|3663aa588fe6bd1da171892667f923039138c571
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|3777b77884428d2b630c816af2cb24f051a6c200
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|55973e1172766bb5332887a4c26383f9b0eb84c0
 
 # Audio
 vendor/lib/hw/sound_trigger.primary.kona.so
@@ -782,14 +782,14 @@ vendor/bin/ftmdaemon
 vendor/bin/wdsdaemon
 
 # Fingerprint - MIUI 12.2.3
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib/hw/fingerprint.goodix_fod.so
-vendor/lib/hw/fingerprint.goodix_fod6.so
-vendor/lib64/hw/fingerprint.goodix_fod.so
-vendor/lib64/hw/fingerprint.goodix_fod6.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|229da7cf11bc059d95c113d1fb7fd595f7e7a05d
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|bee9bd6f7b4f7ea83b8be60c9eb20519372a3263
+vendor/lib/hw/fingerprint.goodix_fod.so|70c1fcd4f6950352659b5ebc2f4a5bbc7d9b38bd
+vendor/lib/hw/fingerprint.goodix_fod6.so|867612f0761f953167a0268397fbaa9e604ea736
+vendor/lib64/hw/fingerprint.goodix_fod.so|f2b974a1df64328b858c55ec144dbcd03683aebd
+vendor/lib64/hw/fingerprint.goodix_fod6.so|428cdf83e38ea59b8995a3c56500dddfb1d61558
+vendor/lib64/libgf_hal.so|42e2eae94390007c42321e228f0327a814c3695d
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|8610a0f066ae154ab8bcc6e636585b7db2293e72
 
 # GPS
 vendor/bin/garden_app
