@@ -1218,7 +1218,6 @@ vendor/bin/sscrpcd
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/sensors/config/kona_ak991x_0.json
-vendor/etc/sensors/config/kona_amd_sw_disabled.json
 vendor/etc/sensors/config/kona_bu52053nvx_0.json
 vendor/etc/sensors/config/kona_default_sensors.json
 vendor/etc/sensors/config/kona_dynamic_sensors.json
@@ -1364,7 +1363,6 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so
 vendor/lib/libsensorslog.so
 vendor/lib/libsnsapi.so
 vendor/lib/libsnsdiaglog.so
@@ -1376,7 +1374,6 @@ vendor/lib/libssc.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
