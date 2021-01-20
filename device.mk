@@ -154,6 +154,17 @@ $(call inherit-product, device/xiaomi/lmi/prebuilt/kernel-modules.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode="aes-256-cts" \
+    ro.crypto.allow_encrypt_override=true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.metadata.method=dm-default-key
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore_desede=true
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lmi
