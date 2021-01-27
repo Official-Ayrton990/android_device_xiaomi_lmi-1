@@ -700,15 +700,15 @@ vendor/lib64/libdiagjni.so
 # Display - MIUI 12.2.4
 vendor/bin/hw/vendor.display.color@1.0-service|af4d5535eca1715c59f1eb2f522d9ef0a7c62952
 vendor/bin/hw/vendor.qti.hardware.display.composer-service|9208e17465e312623f7a6d4b39e57ab9dac56a97
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/bin/displayfeature
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service|1a0e2177fd042873126eaf9408adab52a6b986d4
+vendor/bin/displayfeature|59aad21ba23f37ec9030bf525c420c270907b3de
 vendor/bin/feature_enabler_client|899928d99fc22576ad65dac035f9f33e0efa669d
 vendor/bin/ppd|584a6c33fd3540c39bd7676cdfb19b32a70bca8d
 vendor/bin/qdcmss|b2704a38e84945360080fb16a35e39d3a3f58b0f
 vendor/etc/init/feature_enabler_client.rc|7c8e7cf20093d1a6d94d7de2debd53a7e51f8c29
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc|f44bd5309da357c3f86667b7fbd64d985a72b2d6
 vendor/etc/ltm_config_xiaomi_j11_38_08_0a_fhd_panel.xml|f04531c2bae0e7404fb05698da568ec6b4b17511
 vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml|5d650490ff094547b260172bc3bda2fa9e45322a
 vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml|5d650490ff094547b260172bc3bda2fa9e45322a
@@ -736,15 +736,15 @@ vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml|
 vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml|b25bd6cbadf7a26e37b8a365cddf41608d21545e
 vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml|b25bd6cbadf7a26e37b8a365cddf41608d21545e
 vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml|49936c027f03b308d359832fa6918da31e174aad
-vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib/libdisplayfeatureservice.so
-vendor/lib/libdisplayfeature.so
-vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib64/hw/displayfeature.default.so
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so|69b19b92d9c15e46ec74a400a0683031cdb54a13
+vendor/lib/libdisplayfeatureservice.so|0ff5ad11415afb2bae9afdb3d1323d3f1d7c30d9
+vendor/lib/libdisplayfeature.so|9639588f62534182b9d951ba667ae05cdde32afc
+vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so|7afe16c87598cf997961614283e4745bde5dca10
+vendor/lib64/hw/displayfeature.default.so|63e54bd36bc943184ffb6c5a0e5dab6fd109e7f6
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so|473aac915da47373399fdafe89f3d93c54141c9f
 vendor/lib64/libdisp-aba.so|ccd55f0757aa7fc8821a0d176341a7767f9af183
-vendor/lib64/libdisplayfeatureservice.so
-vendor/lib64/libdisplayfeature.so
+vendor/lib64/libdisplayfeatureservice.so|191386cbdbe77aa231877982e992242b2574748a
+vendor/lib64/libdisplayfeature.so|9be2d8fb63ed55798cfe15cc6c7df537bff5cfdd
 vendor/lib64/libdisplayqos.so|5a4431998d0d25af797f3704740f163afad905ca
 vendor/lib64/libdisplayskuutils.so|a3ecb8cd3d6c00652491e22a7b807d3e89c2dd20
 vendor/lib64/libdpps.so|aeb27e303cd35c1e3ae3b45be3068cd0ddabb50d
@@ -767,7 +767,7 @@ vendor/lib64/vendor.display.color@1.3.so|77fdaa8fa1f14d3c9131a8a20dd19e1b8620af9
 vendor/lib64/vendor.display.color@1.4.so|84a5aba0f1eb4e354c597d89a3e2a589089977c1
 vendor/lib64/vendor.display.color@1.5.so|a923027aa15c0f1680b5b95e98fc040235292033
 vendor/lib64/vendor.display.postproc@1.0.so|54b59d5566a4f5ed0180b03d42268c9b5e89d508
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so|7b61aa2ebffdf480599bd2c5fc85544839b995fa
 
 # FASTCV
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -852,6 +852,12 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+
+# GPS - MIUI 12.2.4
+vendor/lib/libloc_core.so|a013555057102e90554d196c276ed8bd00e78a44
+vendor/lib/libgps.utils.so|b5f1401d69463d48ecfc15d0a037353c0c45bce0
+vendor/lib64/libloc_core.so|8d9a33f3579fc8f80f852532644e012a69ef00d1
+vendor/lib64/libgps.utils.so|217c7eb01cc900cee193e141517471ec121d7c07
 
 # Hotword - MIUI 12.2.4
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|91c49e2f1f95fe76952eb55d7a936a997685b964
