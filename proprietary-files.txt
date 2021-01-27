@@ -443,6 +443,7 @@ vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so|13f18561630bfacc07d165ac
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so|be1c95bf8e1cccfcc9ef8c495e756d0f5f91f181
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so|4d796f47d7dda6aacbc6506e247e20962374cd66
 vendor/lib/libcamxexternalformatutils.so|41bc34503d0441dd60eff4daed2d01077b564481
+vendor/lib/libmegface.so|81769666f96e8054022674cd9b7981803f86c5f5
 vendor/lib64/camera/components/com.arcsoft.node.deflicker.so|8d90813db6ff776fc1169245e811fd8f48c8ec07
 vendor/lib64/camera/components/com.arcsoft.node.smoothtransition.so|ae02273b95f66b27c236d24c8d60b1cd2af5cd44
 vendor/lib64/camera/components/com.arcsoft.node.superportrait.so|22306b014308bb7372ce7f8eb8086fe9e49fdcd6
@@ -597,6 +598,7 @@ vendor/lib64/libcom.qti.chinodeutils.so|f2e19cff4ef8aa3937b457d98f5b487a9bd81795
 vendor/lib64/libdualcam_optical_zoom_control.so|87a0507f8115488666a2a65a6237e80086854d7c
 vendor/lib64/libdualcam_video_optical_zoom.so|646a9075456fef857208520ad007b61fa2a2418d
 vendor/lib64/libipebpsstriping.so|0894e54002e18443481f0b90e87c32fcc8783c38
+vendor/lib64/libmegface.so|8f67d986f23a110e48a2c6c57024ac3dee4993aa
 vendor/lib64/libmmcamera_faceproc.so|9f12fe5b6671fbf4183051e201bda21ed7dc5dbe
 vendor/lib64/libmmcamera_faceproc2.so|3a09ebc6d06a140327c7ca7d506e6196bf0ffe60
 vendor/lib64/libmpbase.so|e6b51e2d501f434eea15ecdc275011d1498301ae
