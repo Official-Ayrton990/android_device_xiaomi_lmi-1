@@ -205,6 +205,10 @@ TARGET_BOARD_PLATFORM := kona
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/public.libraries-qti.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries-qti.txt
 
+# QSPM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qspm.enable=true
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS += \
     audio \
