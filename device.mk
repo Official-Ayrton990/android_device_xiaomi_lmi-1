@@ -50,6 +50,9 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libvolumelistener
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=7
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
