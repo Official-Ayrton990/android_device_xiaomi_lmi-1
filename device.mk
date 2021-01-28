@@ -172,6 +172,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.qti
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lmi
