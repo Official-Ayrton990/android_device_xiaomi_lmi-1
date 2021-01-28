@@ -68,14 +68,6 @@ vendor/firmware/a650_zap.mdt|976a56e6c329c67e1e207f9c72a27a14bab268d6
 
 # Audio
 vendor/bin/audioflacapp
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -176,6 +168,15 @@ vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Audio - MIUI 12.2.4
+vendor/etc/acdbdata/adsp_avs_config.acdb|bd5453d6fd844ccc4a5160a4cbd7871dcd1aa655
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb|4737c525129d849c02958c93eca75128dd7c6d2f
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb|d775ff45660722943a628fb5f234e3acdf98f45b
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|2446cbb3af28ca8f2b1da9c5a1e65c2204bf64f8
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb|81beae0989fa517cfe4b18e9175e88739dd0059e
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb|2e08dc78525e42111daf1cd6a7789bb9cc6cfd63
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|3b58ae694056419e91825958f2d2d90bc29dc017
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|0b5fae990bd64510fe30d68c622a93c911053d45
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|4a92b4f11b0c9f812aa941802768c45e0bd43944
 vendor/firmware/tfa98xx.cnt|bf6e8790f697c893604e47f1b68aa217d8b584c3
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so|1f568f739f627889ae24f1fc22e62ebb2d264eb5
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|810a8fbbc0ea6e12979f327330c8b66b07467846
@@ -803,6 +804,14 @@ vendor/lib64/hw/fingerprint.goodix_fod.so|f2b974a1df64328b858c55ec144dbcd03683ae
 vendor/lib64/libgf_hal6.so|70f81507be47366761ea64b4b578e78d5c31e8fa
 vendor/lib64/libgf_hal.so|42e2eae94390007c42321e228f0327a814c3695d
 
+# GPS
+vendor/lib64/libasn1cper.so|13b075d2b057662ad67c654069b621b20a803e1c
+vendor/lib64/libasn1crt.so|a7bf6233e19190d46abdbe86f614edb3160405be
+vendor/lib64/libasn1crtx.so|676b4bbc45aba8492594820733f5b226ff03569a
+vendor/lib64/liblocdiagiface.so|31f88106b5aeceff4264f06ce5299455c3058499
+vendor/lib64/libxtwifi_server_protocol.so|163df7a732f9536c900b57c12a4b769606470eeb
+vendor/lib64/libxtwifi_server_protocol_uri_v3.so|5d0db7faacd6437c328852595065ed00010ff646
+
 # GPS - MIUI 12.2.4
 vendor/bin/garden_app|4b12164a360d700bcbdc8432a7fd148861ca6992
 vendor/bin/loc_launcher|ac041a76f31089c5303fe0efd123b43867c94173
@@ -823,9 +832,6 @@ vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 vendor/lib/libloc_core.so|a013555057102e90554d196c276ed8bd00e78a44
 vendor/lib/libgps.utils.so|b5f1401d69463d48ecfc15d0a037353c0c45bce0
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|203c8cf23549df529b8b9eb806347f0892027cb5
-vendor/lib64/libasn1cper.so|13b075d2b057662ad67c654069b621b20a803e1c
-vendor/lib64/libasn1crt.so|a7bf6233e19190d46abdbe86f614edb3160405be
-vendor/lib64/libasn1crtx.so|676b4bbc45aba8492594820733f5b226ff03569a
 vendor/lib64/libcdfw.so|70b2c23a72079f0d97cd80d46d00895d63ef0bac
 vendor/lib64/libcdfw_remote_api.so|cb5d94bb2fa578dfad3d0e17e3146e2bb481e7e3
 vendor/lib64/libdataitems.so|2b03d7264a97ac3c9b9cae6621f2241ce0858842
@@ -842,15 +848,12 @@ vendor/lib64/libloc_core.so|8d9a33f3579fc8f80f852532644e012a69ef00d1
 vendor/lib64/libloc_socket.so|2250afb8af7d7e826104d7b7343a77aba781edc9
 vendor/lib64/liblocationservice.so|51fb344cde820d72610426e955101c972eddf14b
 vendor/lib64/liblocationservice_glue.so|2457ef50f98e09743bbc9f70634292fd2c01c307
-vendor/lib64/liblocdiagiface.so|31f88106b5aeceff4264f06ce5299455c3058499
 vendor/lib64/liblowi_client.so|c238ceca654737f8a91f5b6f5fb2ca85a3c467e1
 vendor/lib64/liblowi_wifihal.so|23e16559ca2843e47c0a916d5a9c12907ada4bbc
 vendor/lib64/libqcc_file_agent.so|d2aee480ca4346ee73183c0b5f18b855eb6239be
 vendor/lib64/libslimclient.so|08dd9e2536d1457a5142cfe82db99d1bfd847a89
 vendor/lib64/libsynergy_loc_api.so|5ab194e8490aaa47ae45e9585556db0b7df8869b
 vendor/lib64/libxtadapter.so|ae8a45439284ed80585883487c802f9f25335ed6
-vendor/lib64/libxtwifi_server_protocol.so|163df7a732f9536c900b57c12a4b769606470eeb
-vendor/lib64/libxtwifi_server_protocol_uri_v3.so|5d0db7faacd6437c328852595065ed00010ff646
 vendor/lib64/vendor.qti.gnss@1.0.so|2d82bb4f5d19016411bb8e49de5de6de91932b60
 vendor/lib64/vendor.qti.gnss@1.1.so|2b26d20247b30cbfb17e03bb58d8ac2bcc5a5000
 vendor/lib64/vendor.qti.gnss@1.2.so|d7fd079481f37f27610a0018b81709bb24c13053
